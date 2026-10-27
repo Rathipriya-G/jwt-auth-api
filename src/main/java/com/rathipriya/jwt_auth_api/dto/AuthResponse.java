@@ -1,0 +1,23 @@
+
+package com.rathipriya.jwt_auth_api.dto;
+
+public class AuthResponse {
+
+    private String token;
+    private String tokenType = "Bearer";
+
+    public AuthResponse() {
+    }
+
+    public AuthResponse(String token) {
+        this.token = token;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public String getTokenType() {
+        return tokenType;
+    }
+}
